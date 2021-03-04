@@ -3,6 +3,7 @@
     "hecoProviderUrl":"https://http-testnet.hecochain.com",
     "bscProviderUrl":"https://data-seed-prebsc-2-s1.binance.org:8545/",
     "databaseAddress": "0xd2DC88d07A655E389a9aaE6191B5207e4F2227dE",
+    "tradedatabaseAddress":"0x37d02f2613d7c1089a5cAa580224137ba77c79B0",
     "bscurl":[
         "https://data-seed-prebsc-1-s1.binance.org:8545/",
         "https://data-seed-prebsc-2-s1.binance.org:8545/",
@@ -13,19 +14,51 @@
     ],
     "deriAddress":"0x3C125824a889B46f039ab7449b70AF5b8466F3cf",
     "deriDataBaseAbi":[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[],"name":"controller","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"poolDataBSC","outputs":[{"internalType":"uint256","name":"apy","type":"uint256"},{"internalType":"uint256","name":"finishLine","type":"uint256"},{"internalType":"uint256","name":"finishBlock","type":"uint256"},{"internalType":"uint256","name":"finishRank","type":"uint256"},{"internalType":"string","name":"bTokenSymbol","type":"string"},{"internalType":"uint256","name":"liquidity","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"poolDataETH","outputs":[{"internalType":"uint256","name":"apy","type":"uint256"},{"internalType":"uint256","name":"finishLine","type":"uint256"},{"internalType":"uint256","name":"finishBlock","type":"uint256"},{"internalType":"uint256","name":"finishRank","type":"uint256"},{"internalType":"string","name":"bTokenSymbol","type":"string"},{"internalType":"uint256","name":"liquidity","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"poolDataHECO","outputs":[{"internalType":"uint256","name":"apy","type":"uint256"},{"internalType":"uint256","name":"finishLine","type":"uint256"},{"internalType":"uint256","name":"finishBlock","type":"uint256"},{"internalType":"uint256","name":"finishRank","type":"uint256"},{"internalType":"string","name":"bTokenSymbol","type":"string"},{"internalType":"uint256","name":"liquidity","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address[]","name":"accounts","type":"address[]"},{"internalType":"uint256[]","name":"values","type":"uint256[]"}],"name":"setDeriClaimed","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"accounts","type":"address[]"},{"internalType":"uint256[]","name":"values","type":"uint256[]"}],"name":"setDeriHarvested","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256[]","name":"indexes","type":"uint256[]"},{"internalType":"address[]","name":"pools","type":"address[]"},{"internalType":"uint256[]","name":"values","type":"uint256[]"}],"name":"setPoolAPY","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"},{"internalType":"address","name":"pool","type":"address"},{"internalType":"string","name":"symbol","type":"string"}],"name":"setPoolBTokenSymbol","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256[]","name":"indexes","type":"uint256[]"},{"internalType":"address[]","name":"pools","type":"address[]"},{"internalType":"uint256[]","name":"values","type":"uint256[]"}],"name":"setPoolFinishBlock","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256[]","name":"indexes","type":"uint256[]"},{"internalType":"address[]","name":"pools","type":"address[]"},{"internalType":"uint256[]","name":"values","type":"uint256[]"}],"name":"setPoolFinishLine","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256[]","name":"indexes","type":"uint256[]"},{"internalType":"address[]","name":"pools","type":"address[]"},{"internalType":"uint256[]","name":"values","type":"uint256[]"}],"name":"setPoolFinishRank","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256[]","name":"indexes","type":"uint256[]"},{"internalType":"address[]","name":"pools","type":"address[]"},{"internalType":"uint256[]","name":"values","type":"uint256[]"}],"name":"setPoolLiquidity","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"accounts","type":"address[]"},{"internalType":"uint256[]","name":"amounts","type":"uint256[]"},{"internalType":"uint256[]","name":"deadlines","type":"uint256[]"},{"internalType":"uint8[]","name":"vs","type":"uint8[]"},{"internalType":"bytes32[]","name":"rs","type":"bytes32[]"},{"internalType":"bytes32[]","name":"ss","type":"bytes32[]"}],"name":"setSignature","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"accounts","type":"address[]"}],"name":"unsetSignature","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"userData","outputs":[{"internalType":"uint256","name":"deriHarvested","type":"uint256"},{"internalType":"uint256","name":"deriClaimed","type":"uint256"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"deadline","type":"uint256"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"stateMutability":"view","type":"function"}],
+    "tradeDataBaseAbi":[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"controllers","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"controller_","type":"address"}],"name":"delController","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"address","name":"","type":"address"},{"internalType":"uint256","name":"","type":"uint256"}],"name":"poolVolume","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"controller_","type":"address"}],"name":"setController","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"components":[{"internalType":"uint256","name":"chainId","type":"uint256"},{"internalType":"address","name":"poolAddress","type":"address"},{"internalType":"uint256","name":"epochBeginTimestamp","type":"uint256"},{"internalType":"uint256","name":"value","type":"uint256"}],"internalType":"struct Database.Parameters4[]","name":"values","type":"tuple[]"}],"name":"setPoolVolume","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"components":[{"internalType":"uint256","name":"chainId","type":"uint256"},{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"deadline","type":"uint256"},{"internalType":"uint256","name":"nonce","type":"uint256"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"internalType":"struct Database.Parameters1[]","name":"values","type":"tuple[]"}],"name":"setSignatures","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"components":[{"internalType":"uint256","name":"chainId","type":"uint256"},{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"}],"internalType":"struct Database.Parameters5[]","name":"values","type":"tuple[]"}],"name":"setUserClaimedDeri","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"components":[{"internalType":"uint256","name":"chainId","type":"uint256"},{"internalType":"address","name":"poolAddress","type":"address"},{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"epochBeginTimestamp","type":"uint256"},{"internalType":"uint256","name":"value","type":"uint256"}],"internalType":"struct Database.Parameters3[]","name":"values","type":"tuple[]"}],"name":"setUserHarvest","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"components":[{"internalType":"uint256","name":"chainId","type":"uint256"},{"internalType":"address","name":"poolAddress","type":"address"},{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"epochBeginTimestamp","type":"uint256"},{"internalType":"uint256","name":"value","type":"uint256"}],"internalType":"struct Database.Parameters3[]","name":"values","type":"tuple[]"}],"name":"setUserVolume","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"address","name":"","type":"address"}],"name":"signatures","outputs":[{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"deadline","type":"uint256"},{"internalType":"uint256","name":"nonce","type":"uint256"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"},{"internalType":"bool","name":"valid","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"components":[{"internalType":"uint256","name":"chainId","type":"uint256"},{"internalType":"address","name":"account","type":"address"}],"internalType":"struct Database.Parameters2[]","name":"values","type":"tuple[]"}],"name":"unsetSignatures","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"address","name":"","type":"address"}],"name":"userClaimedDeri","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"address","name":"","type":"address"},{"internalType":"address","name":"","type":"address"},{"internalType":"uint256","name":"","type":"uint256"}],"name":"userHarvest","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"address","name":"","type":"address"},{"internalType":"address","name":"","type":"address"},{"internalType":"uint256","name":"","type":"uint256"}],"name":"userVolume","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"}],
     "ropstenProviderUrl": "https://ropsten.infura.io/v3/194f1b2b258e45ad9e50d5e30f2ec8bb", 
     "addresses":[
-        
-        {
-            "pool": "0x7137cc9f252dc405dadc35F597dA8B32e8653603",
-            "bToken": "0x3449FC1Cd036255BA1EB19d65fF4BA2b8903A69a",
-            "pToken": "0x15aD9b67cf54037127fD986Ca3bB775f9FC4ad05",
-            "lToken": "0xeC27d4c53C2E29F1113A9667c0B19442df83c1f1",
-            "dToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
-            "bTokenSymbol":"BAC",
-            "chanId":"1"
-        }
-         
+        [
+            {
+                "pool": "0x639a9C2fAe976D089dCcc2ffAE51Ef1dd04B7985",
+                "bToken": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+                "pToken": "0x3c11c4990447F0AD575eBd74E8cD17bf61848A15",
+                "lToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
+                "dToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
+                "bTokenSymbol":"BUSD",
+                "chanId":"56"
+            }
+        ],
+        [
+            {
+                "pool": "0x3C2970466635AAeFEd1cfe630D051Fa6D281aEbB",
+                "bToken": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                "pToken": "0x9c6134F9e759C6812aaC102FC1a9f7cA5615fD33",
+                "lToken": "0x43CA6D7129d7F490d5B91B4D14D7c877D15A92dA",
+                "dToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
+                "bTokenSymbol":"USDT",
+                "chanId":"1"
+            },
+            {
+                "pool": "0x7137cc9f252dc405dadc35F597dA8B32e8653603",
+                "bToken": "0x3449FC1Cd036255BA1EB19d65fF4BA2b8903A69a",
+                "pToken": "0x15aD9b67cf54037127fD986Ca3bB775f9FC4ad05",
+                "lToken": "0xeC27d4c53C2E29F1113A9667c0B19442df83c1f1",
+                "dToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
+                "bTokenSymbol":"BAC",
+                "chanId":"1"
+            }
+        ],
+        [
+            {
+                "pool": "0x9b404BAB12CE0D5039e7313d9e24f4b5c8E8E8e3",
+                "bToken": "0x0298c2b32eaE4da002a15f36fdf7615BEa3DA047",
+                "pToken": "0x732Ba556B304fd74Cd14b74ab8762A7D9f26d476",
+                "lToken": "0x90fE976Cbb48E0761A84DDA2974024377994a997",
+                "dToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
+                "bTokenSymbol":"HUSD",
+                "chanId":"128"
+            }
+        ]
     ],
     
     "abifiles": {
