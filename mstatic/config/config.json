@@ -3,7 +3,7 @@
     "hecoProviderUrl":"https://http-testnet.hecochain.com",
     "bscProviderUrl":"https://data-seed-prebsc-2-s1.binance.org:8545/",
     "databaseAddress": "0xd2DC88d07A655E389a9aaE6191B5207e4F2227dE",
-    "tradedatabaseAddress":"0x37d02f2613d7c1089a5cAa580224137ba77c79B0",
+    "tradedatabaseAddress":"0xa8dc81B3f42F4f3f0171B477eE5B701F4bA78253",
     "bscurl":[
         "https://data-seed-prebsc-1-s1.binance.org:8545/",
         "https://data-seed-prebsc-2-s1.binance.org:8545/",
@@ -24,6 +24,7 @@
                 "pToken": "0x3c11c4990447F0AD575eBd74E8cD17bf61848A15",
                 "lToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
                 "dToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
+                "MiningVault":"0x6C8d3F31b2ad1AE997Afa20EAd88cb67E93C6E17",
                 "bTokenSymbol":"BUSD",
                 "chanId":"56"
             }
@@ -35,6 +36,7 @@
                 "pToken": "0x9c6134F9e759C6812aaC102FC1a9f7cA5615fD33",
                 "lToken": "0x43CA6D7129d7F490d5B91B4D14D7c877D15A92dA",
                 "dToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
+                "MiningVault":"0x7826Ef8Da65494EA21D64D8E6A76AB1BED042FD8",
                 "bTokenSymbol":"USDT",
                 "chanId":"1"
             },
@@ -44,6 +46,7 @@
                 "pToken": "0x15aD9b67cf54037127fD986Ca3bB775f9FC4ad05",
                 "lToken": "0xeC27d4c53C2E29F1113A9667c0B19442df83c1f1",
                 "dToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
+                "MiningVault":"0x7826Ef8Da65494EA21D64D8E6A76AB1BED042FD8",
                 "bTokenSymbol":"BAC",
                 "chanId":"1"
             }
@@ -55,6 +58,7 @@
                 "pToken": "0x732Ba556B304fd74Cd14b74ab8762A7D9f26d476",
                 "lToken": "0x90fE976Cbb48E0761A84DDA2974024377994a997",
                 "dToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
+                "MiningVault":"0xF0bC8b772f26F8DeB46c1aebbEA7C8d502Abf3b8",
                 "bTokenSymbol":"HUSD",
                 "chanId":"128"
             }
@@ -66,6 +70,7 @@
         "bToken": "bToken.abi",
         "pToken": "pToken.abi",
         "lToken": "lToken.abi",
+        "Vault": "Vault.abi",
         "dToken": "dToken.abi"
     },
 
