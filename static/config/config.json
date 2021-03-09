@@ -48,7 +48,17 @@
                 "dToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
                 "MiningVault":"0x7826Ef8Da65494EA21D64D8E6A76AB1BED042FD8",
                 "bTokenSymbol":"BAC",
-                "chanId":"1"
+                "chanId":"1" 
+            },
+            {
+                "bToken": "0xA3DfbF2933FF3d96177bde4928D0F5840eE55600",
+                "pToken": "0x0000000000000000000000000000000000000000",
+                "lToken": "0x0000000000000000000000000000000000000000",
+                "pool": "0xc2EdaD668740f1aA35E4D8f227fB8E17dcA888Cd",
+                "dToken": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
+                "MiningVault":"0x7826Ef8Da65494EA21D64D8E6A76AB1BED042FD8",
+                "chanId":"1",
+                "bTokenSymbol":"DERI-USDT SLP ONSEN"
             }
         ],
         [
@@ -67,6 +77,7 @@
     
     "abifiles": {
         "pool": "pool.abi",
+        "SushiMasterChef":"SushiMasterChef.abi",
         "bToken": "bToken.abi",
         "pToken": "pToken.abi",
         "lToken": "lToken.abi",
